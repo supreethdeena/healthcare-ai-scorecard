@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Healthcare AI Leadership Archetype | Healthcare Unstructured</title>
+<style>
+:root{--navy:#101b2b;--panel:#17263a;--muted:#aeb9c8;--gold:#c68b45;--line:#304157;--white:#f7f8fa}
+*{box-sizing:border-box}body{margin:0;background:var(--navy);color:var(--white);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 20px 64px}.brand{color:var(--gold);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.08;margin:18px 0}h2{font-size:1.5rem;line-height:1.2}
+p{color:var(--muted)}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;margin-top:24px}
+button{border:0;border-radius:999px;background:var(--gold);color:#111827;padding:13px 22px;font-weight:750;font-size:15px;cursor:pointer}button.secondary{background:transparent;border:1px solid var(--line);color:var(--white)}button:disabled{opacity:.4;cursor:not-allowed}
+.actions{display:flex;gap:12px;justify-content:space-between;margin-top:24px;flex-wrap:wrap}.progress{height:7px;background:#34445a;border-radius:10px;overflow:hidden;margin:12px 0 24px}.bar{height:100%;background:var(--gold);width:0;transition:width .2s}
+.eyebrow{color:var(--gold);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.option{display:block;border:1px solid var(--line);padding:14px 16px;border-radius:12px;margin:10px 0;cursor:pointer;color:var(--white)}.option:hover,.option.selected{border-color:var(--gold);background:#26354a}.option input{margin-right:10px;accent-color:var(--gold)}
+.badge{width:116px;height:116px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:20px auto;color:var(--gold);font-size:42px;background:#202f42}
+.score{font-size:2.4rem;color:var(--gold);font-weight:800}.dimension{margin:16px 0}.dimhead{display:flex;justify-content:space-between;gap:12px}.track{height:8px;background:#34445a;border-radius:9px;margin-top:7px}.fill{height:100%;background:var(--gold);border-radius:9px}
+.small{font-size:13px}.hidden{display:none}.note{border-left:3px solid var(--gold);padding-left:14px;color:var(--muted)}
+a{color:var(--gold)}footer{margin-top:34px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body><main>
+<div class="brand">Healthcare Unstructured</div>
+<section id="intro">
+<h1>What's your Healthcare AI Leadership Archetype?</h1>
+<p>Ten questions. A few minutes. A clearer view of how your organization is approaching AI.</p>
+<div class="card"><div class="eyebrow">The scorecard</div><h2>Explore your organization's AI journey</h2><p>Answer based on your organization's current reality. There are no right or wrong answers. Your result is a conversation starter, not a formal audit or benchmark.</p><button id="start">Start the scorecard</button><p class="small">10 questions · 5 dimensions · 6 archetypes · No sign-up required</p></div>
+</section>
+<section id="quiz" class="hidden">
+<div class="eyebrow" id="dimension"></div><div class="dimhead"><span id="count">Question 1 of 10</span><span id="pct">10%</span></div><div class="progress"><div class="bar" id="bar"></div></div>
+<div class="card"><h2 id="question"></h2><div id="options"></div><div class="actions"><button class="secondary" id="back">Back</button><button id="next" disabled>Next</button></div></div>
+</section>
+<section id="result" class="hidden">
+<div class="eyebrow">Your result</div><div class="card" style="text-align:center"><div class="badge" id="symbol">✦</div><h1 id="archetype"></h1><p id="tagline"></p><div class="score" id="total"></div><p class="small">out of 50</p><p id="description"></p><button id="share">Share my archetype</button></div>
+<div class="card"><h2>Your five dimensions</h2><div id="dimensions"></div></div>
+<div class="card"><div class="eyebrow">Your suggested next step</div><h2 id="nextstep"></h2><p id="advice"></p><p class="note">Join Healthcare Unstructured to discuss how healthcare leaders are navigating these questions.</p><button id="community">Explore the community</button><p class="small">Add your LinkedIn group URL in <code>script.js</code> before publishing.</p></div>
+<button class="secondary" id="restart">Retake the scorecard</button>
+<footer>Healthcare Unstructured · This self-assessment is an exploratory tool, not a validated clinical, regulatory, or organizational audit.</footer>
+</section>
+</main><script src="script.js"></script></body></html>

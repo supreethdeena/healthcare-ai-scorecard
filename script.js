@@ -98,5 +98,5 @@
       else window.prompt('Copy this text to share:', text);
     } catch (error) { if (error.name !== 'AbortError') window.prompt('Copy this text to share:', text); }
   });
-  $('community').addEventListener('click', () => window.open('https://www.linkedin.com/', '_blank', 'noopener,noreferrer'));
+  $('community').addEventListener('click', () => window.open('https://www.linkedin.com/groups/40972012/', '_blank', 'noopener,noreferrer'));
 })();

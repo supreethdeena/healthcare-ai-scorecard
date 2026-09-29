@@ -15,7 +15,29 @@
     .k{font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:700}h1,h2{font-family:'Manrope',sans-serif;letter-spacing:-.04em;line-height:1.12}h1{font-size:clamp(2.5rem,7vw,4.8rem);font-weight:600;margin:20px 0}h1 em{font-family:Georgia,serif;font-weight:400;color:var(--orange-light)}h2{font-size:clamp(1.6rem,4vw,2.4rem);margin:12px 0}p{color:var(--muted)}.hero{padding:66px 0 40px;max-width:690px}.hero p{font-size:18px}.meta{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:26px 0}
     button{font:700 13px 'DM Sans',sans-serif;background:var(--orange);color:#101820;border:1px solid var(--orange);padding:14px 22px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;min-height:48px}button:hover{background:var(--orange-light);border-color:var(--orange-light)}button:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}button:disabled{opacity:.4;cursor:not-allowed}.secondary{background:transparent;color:var(--text);border-color:var(--line)}.secondary:hover{background:#ffffff0b;border-color:var(--orange-light)}
     .panel{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;margin:22px 0}.hidden{display:none!important}.progressmeta,.dimhead{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.progress{height:3px;background:var(--line);margin:12px 0 36px}.bar{height:100%;width:0;background:var(--orange);transition:width .2s ease}.option{display:flex;align-items:flex-start;gap:13px;padding:15px 10px;border-bottom:1px solid var(--line);cursor:pointer;color:var(--text)}.option:first-child{border-top:1px solid var(--line)}.option:hover,.option.selected{background:#bd794812}.option input{accent-color:var(--orange);margin:5px 0 0;flex:0 0 auto;width:16px;height:16px}.actions{display:flex;justify-content:space-between;gap:12px;margin-top:26px}.actions button{min-width:120px}.seal{width:104px;height:104px;border:1px solid var(--orange);border-radius:50%;display:grid;place-items:center;color:var(--orange-light);font:40px Georgia;margin:22px auto;outline:1px dashed #bd794877;outline-offset:7px}.center{text-align:center}.score{color:var(--orange-light);font:600 14px 'Manrope',sans-serif;letter-spacing:.1em}.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:30px 0}.dim{margin:16px 0}.track{height:3px;background:var(--line);margin-top:8px}.fill{height:100%;background:var(--orange)}.foot{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:11px;margin-top:36px}.error{padding:12px;border:1px solid #bd7948;color:var(--text);margin:16px 0}
-    @media(max-width:600px){main{padding:18px 17px 48px}.hero{padding:48px 0 30px}.grid{grid-template-columns:1fr}.actions button{min-width:0;flex:1}}
+    @media(max-width:700px){
+      body{font-size:16px;line-height:1.6}
+      main{width:100%;padding:16px 18px 40px}
+      .top{padding:10px 0 18px;font-size:11px}
+      .hero{padding:42px 0 28px}
+      h1{font-size:clamp(2.25rem,10vw,3.5rem);line-height:1.06;margin:16px 0}
+      h2{font-size:clamp(1.45rem,7vw,2rem)}
+      .hero p{font-size:16px}
+      .meta{font-size:11px;line-height:1.8;margin:20px 0}
+      button{min-height:50px;padding:14px 16px;font-size:12px}
+      .panel{padding:22px 0;margin:18px 0}
+      .progress{margin:10px 0 26px}
+      .progressmeta{font-size:10px;gap:8px}
+      .option{padding:16px 12px;gap:12px;min-height:58px;line-height:1.45}
+      .option input{width:20px;height:20px;margin:2px 0 0}
+      .actions{gap:10px;margin-top:22px}
+      .actions button{min-width:0;flex:1;padding:13px 10px}
+      .grid{grid-template-columns:1fr;gap:8px;padding:18px 0}
+      .seal{width:88px;height:88px;font-size:34px}
+      .score{font-size:12px}
+      .foot{line-height:1.5}
+    }
+    @media(max-width:380px){main{padding-left:14px;padding-right:14px}.actions{flex-direction:column-reverse}.actions button{width:100%}.option{padding:14px 9px}}
   </style>
 </head>
 <body>
